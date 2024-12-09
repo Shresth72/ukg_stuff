@@ -1,0 +1,7 @@
+#include <munit/munit.h>
+#include <stdio.h>
+
+int main() {
+  printf("Program in C\n");
+  return 0;
+}
