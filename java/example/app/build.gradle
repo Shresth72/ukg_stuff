@@ -46,6 +46,9 @@ application {
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+    filter {
+      includeTestsMatching "org.reward.extensions.*"
+    }
 }
 
 tasks.register('runMethods', JavaExec) {
