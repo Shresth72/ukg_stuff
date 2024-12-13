@@ -45,7 +45,10 @@ application {
 
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
-    useJUnitPlatform()
+    useJUnitPlatform {
+      // includeTags 'extensions', 'v1'
+      // excludeTags 'conversion'
+    }
     filter {
       includeTestsMatching "org.reward.extensions.*"
     }
