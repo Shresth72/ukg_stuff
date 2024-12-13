@@ -20,7 +20,9 @@ import org.product.Product;
 public class Reward2InstanceTest {
   private RewardByDiscountService reward = null;
 
-  Reward2InstanceTest() { System.out.println("Constructor"); }
+  Reward2InstanceTest() {
+    System.out.println("Constructor");
+  }
 
   @BeforeAll
   static void setUpAll() {
